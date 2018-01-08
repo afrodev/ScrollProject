@@ -12,6 +12,7 @@
 		F2D29A0520034E2A000E47D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D29A0320034E2A000E47D8 /* Main.storyboard */; };
 		F2D29A0720034E2A000E47D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F2D29A0620034E2A000E47D8 /* Assets.xcassets */; };
 		F2D29A0A20034E2A000E47D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2D29A0820034E2A000E47D8 /* LaunchScreen.storyboard */; };
+		F2D29A1220034F49000E47D8 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D29A1120034F49000E47D8 /* BaseTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F2D29A0620034E2A000E47D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F2D29A0920034E2A000E47D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F2D29A0B20034E2A000E47D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2D29A1120034F49000E47D8 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				F2D299FF20034E2A000E47D8 /* AppDelegate.swift */,
+				F2D29A1120034F49000E47D8 /* BaseTableViewController.swift */,
 				F2D29A0120034E2A000E47D8 /* ViewController.swift */,
 				F2D29A0320034E2A000E47D8 /* Main.storyboard */,
 				F2D29A0620034E2A000E47D8 /* Assets.xcassets */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2D29A1220034F49000E47D8 /* BaseTableViewController.swift in Sources */,
 				F2D29A0220034E2A000E47D8 /* ViewController.swift in Sources */,
 				F2D29A0020034E2A000E47D8 /* AppDelegate.swift in Sources */,
 			);
@@ -275,6 +279,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25XD9TNB58;
 				INFOPLIST_FILE = ScrollProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.ScrollProject;
@@ -289,6 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25XD9TNB58;
 				INFOPLIST_FILE = ScrollProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.afrodev.ScrollProject;
