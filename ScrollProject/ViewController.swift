@@ -31,11 +31,11 @@ class ViewController: UIViewController {
         
         self.view.layoutIfNeeded()
         self.tableView.layoutIfNeeded()
-        self.view.frame.size.height = (
-            self.view.frame.height - self.tableView.frame.height
-            ) + (
-                self.tableView.contentSize.height - self.tableView.frame.height
-        )
+        
+        self.view.frame.size.height =
+            (self.view.frame.height - self.tableView.frame.height) +
+            (self.tableView.contentSize.height - self.tableView.frame.height)
+        self.tableView.frame.size.height = self.tableView.contentSize.height
         
     }
     
