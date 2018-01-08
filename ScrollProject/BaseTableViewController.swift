@@ -13,7 +13,6 @@ class BaseTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nVc = storyboard?.instantiateViewController(withIdentifier: "ViewControllerID")
       
         
         // Uncomment the following line to preserve selection between presentations
@@ -22,6 +21,12 @@ class BaseTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
          self.tableView.tableFooterView = UIView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        nVc = storyboard?.instantiateViewController(withIdentifier: "ViewControllerID")
+
     }
 
     

@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var constraintHeight: NSLayoutConstraint!
+    
     @IBOutlet weak var tableView: UITableView!
     let list = ["GETULIO", "GUS", "RAMON", "TOPPEN", "TOPPER",
                 "GETULIO", "GUS", "RAMON", "TOPPEN", "TOPPER",
@@ -29,14 +30,15 @@ class ViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
+        //self.view.translatesAutoresizingMaskIntoConstraints = true
         self.view.layoutIfNeeded()
         self.tableView.layoutIfNeeded()
         
         self.view.frame.size.height =
-            (self.view.frame.height - self.tableView.frame.height) +
-            (self.tableView.contentSize.height - self.tableView.frame.height)
-        self.tableView.frame.size.height = self.tableView.contentSize.height
+            (self.view.frame.height - constraintHeight.constant) +
+            (self.tableView.contentSize.height - constraintHeight.constant)
         
+        constraintHeight.constant = self.tableView.contentSize.height
     }
     
     override func viewDidAppear(_ animated: Bool) {

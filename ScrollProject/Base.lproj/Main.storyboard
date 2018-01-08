@@ -34,6 +34,9 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-TM-jCi">
                                 <rect key="frame" x="0.0" y="232" width="320" height="336"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="336" id="Wh4-b0-5Af"/>
+                                </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellid" textLabel="qfq-0a-3t9" style="IBUITableViewCellStyleDefault" id="H6a-al-E4X">
                                         <rect key="frame" x="0.0" y="28" width="320" height="44"/>
@@ -69,7 +72,6 @@
                             <constraint firstItem="DMn-Va-j4b" firstAttribute="top" secondItem="mvC-nP-XIp" secondAttribute="bottom" constant="43" id="Do8-Lq-Aas"/>
                             <constraint firstItem="1ME-TM-jCi" firstAttribute="top" secondItem="DMn-Va-j4b" secondAttribute="bottom" constant="58" id="HE5-nl-rGJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mvC-nP-XIp" secondAttribute="trailing" constant="101" id="JtB-sn-OAj"/>
-                            <constraint firstAttribute="bottom" secondItem="1ME-TM-jCi" secondAttribute="bottom" id="Vsd-LR-pl7"/>
                             <constraint firstItem="mvC-nP-XIp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="102" id="buY-mF-9u9"/>
                             <constraint firstItem="ft7-Kb-5yp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="6" id="d6p-6m-ycY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ft7-Kb-5yp" secondAttribute="trailing" constant="101" id="kMX-bx-sc4"/>
@@ -81,6 +83,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="constraintHeight" destination="Wh4-b0-5Af" id="Nmk-kj-zCF"/>
                         <outlet property="tableView" destination="1ME-TM-jCi" id="add-QR-kIb"/>
                     </connections>
                 </viewController>
