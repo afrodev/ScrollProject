@@ -10,8 +10,9 @@
 
 # Como foi feito:
 - Na **UITableViewController** foi adicionado uma `ViewController.view` no header dela. Essa `view` 
-vem de um **ViewController** no storyboard (precisa ser iniciada na classe base, para ser colocada na memória)
-- Com isso essa view fica scrollável
-- Caso tenha outra tableview dentro dessa view é necessário garantir que a view tenha 
+vem de um **ViewController** no storyboard (precisa ser iniciada em alguma classe para ser colocada na memória)
+- Com isso essa **ViewController** fica scrollável
+- Caso tenha outra tableview dentro dessa view é necessário garantir que a **ViewController** tenha o tamanho correto,
+  levando em conta o tamanho da view completa e o `tableView.contentSize`.
 
 
